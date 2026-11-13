@@ -1,0 +1,79 @@
+name: Build Native iOS App (.ipa & Unit Tests)
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    paths:
+      - "ios/**"
+  workflow_dispatch:
+
+jobs:
+  build-ios:
+    name: Build & Package NVTSnapMedia.ipa
+    runs-on: macos-15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: xcodebuild -version
+
+      - name: Run Unit Tests on iOS Simulator
+        working-directory: ios
+        run: |
+          SIM_ID=$(xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          data = json.load(sys.stdin)['devices']
+          for runtime, devs in sorted(data.items(), reverse=True):
+              if 'iOS' in runtime:
+                  for d in devs:
+                      if 'iPhone' in d['name'] and d.get('isAvailable'):
+                          print(d['udid'])
+                          sys.exit(0)
+          ")
+          echo "Testing on Simulator UDID: $SIM_ID"
+          xcodebuild test \
+            -project NVTSnapMedia.xcodeproj \
+            -scheme NVTSnapMedia \
+            -destination "platform=iOS Simulator,id=$SIM_ID" \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES \
+            CODE_SIGN_ENTITLEMENTS=""
+
+      - name: Build Release iOS .app & Package NVTSnapMedia.ipa
+        working-directory: ios
+        run: |
+          xcodebuild build \
+            -project NVTSnapMedia.xcodeproj \
+            -scheme NVTSnapMedia \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGN_ENTITLEMENTS=""
+
+          rm -rf Payload NVTSnapMedia.ipa
+          mkdir -p Payload
+          cp -R build/Build/Products/Release-iphoneos/NVTSnapMedia.app Payload/
+
+          # Apply clean ad-hoc signatures so the .ipa works directly with both TrollStore
+          # and Apple ID re-signers (Sideloadly, AltStore, SideStore, Feather, ESign).
+          if [ -d "Payload/NVTSnapMedia.app/PlugIns/NVTSnapMediaShareExtension.appex" ]; then
+            codesign --force --sign - --timestamp=none "Payload/NVTSnapMedia.app/PlugIns/NVTSnapMediaShareExtension.appex"
+          fi
+          codesign --force --sign - --timestamp=none "Payload/NVTSnapMedia.app"
+
+          zip -qry9 NVTSnapMedia.ipa Payload
+          ls -lh NVTSnapMedia.ipa
+
+      - name: Upload NVTSnapMedia.ipa Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NVTSnapMedia-iOS-IPA
+          path: ios/NVTSnapMedia.ipa
+          retention-days: 30

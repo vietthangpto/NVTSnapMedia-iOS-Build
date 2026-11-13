@@ -1,0 +1,736 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E1FC4478FB4D7A522EE0C519 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55242E50256550A25C58ED6B; };
+		B530252E0CB09AA066138080 /* NVTSnapMediaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A356756DB2E9742943397; };
+		AD3759BD50CEB258077195D7 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38AE441262026A914F1C5CF9; };
+		C74A2F2B83DF913179941202 /* AudioTrackExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20321622E73F26956FD243D0; };
+		E698715CE67465324772B2D1 /* DashTrackMuxer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17A075B6B67331DFE1FE544; };
+		591ECB09E4ED4D028CFC2498 /* MediaDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CBDE5F73CBE6AE25EA8469; };
+		B009A6E77FDCC867CBC57170 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FA163503E6FABEA34FD199; };
+		8490F59B4A1DB970456AA4CE /* DownloadDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB9C211E6E4D59FD9E82418; };
+		7968B3DFAA3D4D049F628554 /* FacebookExtractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA19ECE74D3F998EE5F15D69; };
+		3D08747AA180E7DD16EF32D6 /* TikTokExtractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97CC13EE27B7C6B2BD4CE8F0; };
+		D4D7E35BC9551A486657617E /* UnifiedMediaExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471FC85B45AFA941F9B5D4BE; };
+		B02782AF1128D2B3FAEB8D54 /* YouTubeExtractorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED4AB265A5A8BFC2754A92E; };
+		870834BEBF6729344183C4A1 /* DownloadRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8F073B3E3F774B0C9673F; };
+		D0B7883EC6C407247A6E36D6 /* UnifiedMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD91CA3EB338918CBCA6941; };
+		C18B9033DCA86A4B4367D789 /* FacebookUrlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D9ED5DABEFF002239ED784; };
+		D6BF9FD9BDB1E3C1AB447366 /* MediaUrlDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6721ECE8EF56EBC1117F61EB; };
+		46F1BC47D5DBCECFEEB40493 /* RegexUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CC7AC5A0A88DFE01C6173; };
+		DB136EA49DD6A5A887CA6E24 /* TikTokUrlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73995849DC316C1FC1899B14; };
+		8E398F691F661B3543143C2E /* YouTubeUrlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D322C170CA909CF2198A120D; };
+		4DC9321693AAE12BB888B3EE /* RemoteMediaImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5459359C759620A283FB50E3; };
+		6A6B3A461BB77EDDA8884E70 /* SnapMediaComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25339200961036DB5889EBAE; };
+		FAD9A3AFAE4C6ED758D0FBF5 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CC96F18D1EAE71E043650D; };
+		A7D111E4487DC10CA0D458EE /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A32EAB31061574F8D174608; };
+		522149EE41A86355A54D0A81 /* DownloadsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D567A2F62972F79D2539D8B; };
+		928C4E2C2E2FCC4AE5852134 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACD661CF43034FE6D581F0E; };
+		0E756E533FB7D151F2AB4775 /* MediaViewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC321469A84808E8E583B62C; };
+		B621EF5CA9895EBE22CD3153 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C30F69F76798BA6412B6E1; };
+		D2251DA45415ACB48EED1891 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76F98C235B685A68FBA8BA1; };
+		1F1E7196FA6D82E74431A08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12F6E4F4CB07345B83D13556; };
+		BBC6953CAE66330CDA6EFC1E /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04341EB96A4F2DC95621DDCC; };
+		3C6F8B545A50110864781C88 /* UnifiedMediaDetectorAndExtractorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1534DCE4FC04937B840B6EC1; };
+		66BA91FE01CDBB964F9082BB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 266FFC16377277DCCD9DF180; };
+		4149BEEDC05D47CB6C116561 /* NVTSnapMediaShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0E821D8981A4AED92F511E34; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E05E48FDD63002E4852104F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C118764417BDDBEC4AB74F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC431660092F0A1780E0C7E0;
+			remoteInfo = NVTSnapMediaShareExtension;
+		};
+		253F92EE134CF27BB079F641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C118764417BDDBEC4AB74F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3CC01287894AC9C89C38C78;
+			remoteInfo = NVTSnapMedia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		72E38B67DC3BBA121716C380 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4149BEEDC05D47CB6C116561 /* NVTSnapMediaShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2F343A6C10D6E6CEFBB9E35F /* NVTSnapMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NVTSnapMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E821D8981A4AED92F511E34 /* NVTSnapMediaShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NVTSnapMediaShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C7994FE44ED31B885966181 /* NVTSnapMediaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NVTSnapMediaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		266FFC16377277DCCD9DF180 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		55242E50256550A25C58ED6B /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		4D3A356756DB2E9742943397 /* NVTSnapMediaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVTSnapMediaApp.swift; sourceTree = "<group>"; };
+		38AE441262026A914F1C5CF9 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		20321622E73F26956FD243D0 /* AudioTrackExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrackExtractor.swift; sourceTree = "<group>"; };
+		D17A075B6B67331DFE1FE544 /* DashTrackMuxer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashTrackMuxer.swift; sourceTree = "<group>"; };
+		34CBDE5F73CBE6AE25EA8469 /* MediaDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDownloadManager.swift; sourceTree = "<group>"; };
+		60FA163503E6FABEA34FD199 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		5DB9C211E6E4D59FD9E82418 /* DownloadDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDatabase.swift; sourceTree = "<group>"; };
+		CA19ECE74D3F998EE5F15D69 /* FacebookExtractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookExtractorService.swift; sourceTree = "<group>"; };
+		97CC13EE27B7C6B2BD4CE8F0 /* TikTokExtractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokExtractorService.swift; sourceTree = "<group>"; };
+		471FC85B45AFA941F9B5D4BE /* UnifiedMediaExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedMediaExtractor.swift; sourceTree = "<group>"; };
+		9ED4AB265A5A8BFC2754A92E /* YouTubeExtractorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeExtractorService.swift; sourceTree = "<group>"; };
+		56A8F073B3E3F774B0C9673F /* DownloadRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadRecord.swift; sourceTree = "<group>"; };
+		0DD91CA3EB338918CBCA6941 /* UnifiedMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedMedia.swift; sourceTree = "<group>"; };
+		01D9ED5DABEFF002239ED784 /* FacebookUrlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookUrlParser.swift; sourceTree = "<group>"; };
+		6721ECE8EF56EBC1117F61EB /* MediaUrlDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaUrlDetector.swift; sourceTree = "<group>"; };
+		F42CC7AC5A0A88DFE01C6173 /* RegexUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexUtils.swift; sourceTree = "<group>"; };
+		73995849DC316C1FC1899B14 /* TikTokUrlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokUrlParser.swift; sourceTree = "<group>"; };
+		D322C170CA909CF2198A120D /* YouTubeUrlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeUrlParser.swift; sourceTree = "<group>"; };
+		5459359C759620A283FB50E3 /* RemoteMediaImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteMediaImage.swift; sourceTree = "<group>"; };
+		25339200961036DB5889EBAE /* SnapMediaComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapMediaComponents.swift; sourceTree = "<group>"; };
+		11CC96F18D1EAE71E043650D /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		7A32EAB31061574F8D174608 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		2D567A2F62972F79D2539D8B /* DownloadsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsScreen.swift; sourceTree = "<group>"; };
+		CACD661CF43034FE6D581F0E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		FC321469A84808E8E583B62C /* MediaViewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaViewerView.swift; sourceTree = "<group>"; };
+		96C30F69F76798BA6412B6E1 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+		E76F98C235B685A68FBA8BA1 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		12F6E4F4CB07345B83D13556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		646E30168A3F57BBB9E73C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E247233FFF3D3117FFCFFD93 /* NVTSnapMedia.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NVTSnapMedia.entitlements; sourceTree = "<group>"; };
+		04341EB96A4F2DC95621DDCC /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		A7D9360D3399295EE7E363EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		983A27553131C3A98DA09EE4 /* NVTSnapMediaShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NVTSnapMediaShareExtension.entitlements; sourceTree = "<group>"; };
+		1534DCE4FC04937B840B6EC1 /* UnifiedMediaDetectorAndExtractorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnifiedMediaDetectorAndExtractorsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E30240D3D4863272B33089E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BA91FE01CDBB964F9082BB /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1770EACAF858E58D2A5823A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0BDD7A3CB0F54C775FAEB13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4008B3967F37A5CB286A87C3 /* MainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				5F898AE65DD9EF367E7ED9AE /* NVTSnapMedia */,
+				6E86A015411C939F3F2A7763 /* NVTSnapMediaShareExtension */,
+				4B0059FDF6A0FCE587042F54 /* NVTSnapMediaTests */,
+				73690069B692B7E56422F899 /* Frameworks */,
+				C123C736DED18642BE06E5C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F898AE65DD9EF367E7ED9AE /* NVTSnapMedia */ = {
+			isa = PBXGroup;
+			children = (
+				3C227F9D05075608D26D5003 /* App */,
+				654260AC244D4DFFF599E65C /* Data */,
+				9685544FB627F84F192D928E /* Domain */,
+				4A3DD231A563BBFB30F5F99D /* UI */,
+				4B387760F10A3426965D5972 /* Resources */,
+			);
+			path = NVTSnapMedia;
+			sourceTree = "<group>";
+		};
+		3C227F9D05075608D26D5003 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				55242E50256550A25C58ED6B /* AppContainer.swift */,
+				4D3A356756DB2E9742943397 /* NVTSnapMediaApp.swift */,
+				38AE441262026A914F1C5CF9 /* RootTabView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		654260AC244D4DFFF599E65C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7C381A148CA99C2075AE5526 /* Download */,
+				2CEE5FE57003E486D92CDE3D /* Local */,
+				5DE260E35FC966F11427B569 /* Remote */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7C381A148CA99C2075AE5526 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				20321622E73F26956FD243D0 /* AudioTrackExtractor.swift */,
+				D17A075B6B67331DFE1FE544 /* DashTrackMuxer.swift */,
+				34CBDE5F73CBE6AE25EA8469 /* MediaDownloadManager.swift */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		2CEE5FE57003E486D92CDE3D /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				60FA163503E6FABEA34FD199 /* AppPreferences.swift */,
+				5DB9C211E6E4D59FD9E82418 /* DownloadDatabase.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		5DE260E35FC966F11427B569 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				CA19ECE74D3F998EE5F15D69 /* FacebookExtractorService.swift */,
+				97CC13EE27B7C6B2BD4CE8F0 /* TikTokExtractorService.swift */,
+				471FC85B45AFA941F9B5D4BE /* UnifiedMediaExtractor.swift */,
+				9ED4AB265A5A8BFC2754A92E /* YouTubeExtractorService.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		9685544FB627F84F192D928E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				534990E2C8E96E455DB175B4 /* Model */,
+				D5956B95E9932741F1E73399 /* Util */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		534990E2C8E96E455DB175B4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56A8F073B3E3F774B0C9673F /* DownloadRecord.swift */,
+				0DD91CA3EB338918CBCA6941 /* UnifiedMedia.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5956B95E9932741F1E73399 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				01D9ED5DABEFF002239ED784 /* FacebookUrlParser.swift */,
+				6721ECE8EF56EBC1117F61EB /* MediaUrlDetector.swift */,
+				F42CC7AC5A0A88DFE01C6173 /* RegexUtils.swift */,
+				73995849DC316C1FC1899B14 /* TikTokUrlParser.swift */,
+				D322C170CA909CF2198A120D /* YouTubeUrlParser.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		4A3DD231A563BBFB30F5F99D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				912D27526C3422BCE981ED1F /* Components */,
+				6A04139E2BF06E17D71960F5 /* I18n */,
+				7A32EAB31061574F8D174608 /* MainViewModel.swift */,
+				D263562BFC2587A99650ADBA /* Screens */,
+				91A031C872300FB386B0F1CB /* Theme */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		912D27526C3422BCE981ED1F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5459359C759620A283FB50E3 /* RemoteMediaImage.swift */,
+				25339200961036DB5889EBAE /* SnapMediaComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6A04139E2BF06E17D71960F5 /* I18n */ = {
+			isa = PBXGroup;
+			children = (
+				11CC96F18D1EAE71E043650D /* AppStrings.swift */,
+			);
+			path = I18n;
+			sourceTree = "<group>";
+		};
+		D263562BFC2587A99650ADBA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				2D567A2F62972F79D2539D8B /* DownloadsScreen.swift */,
+				CACD661CF43034FE6D581F0E /* HomeScreen.swift */,
+				FC321469A84808E8E583B62C /* MediaViewerView.swift */,
+				96C30F69F76798BA6412B6E1 /* SettingsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		91A031C872300FB386B0F1CB /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E76F98C235B685A68FBA8BA1 /* Theme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		4B387760F10A3426965D5972 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12F6E4F4CB07345B83D13556 /* Assets.xcassets */,
+				646E30168A3F57BBB9E73C56 /* Info.plist */,
+				E247233FFF3D3117FFCFFD93 /* NVTSnapMedia.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6E86A015411C939F3F2A7763 /* NVTSnapMediaShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				04341EB96A4F2DC95621DDCC /* ShareViewController.swift */,
+				A7D9360D3399295EE7E363EA /* Info.plist */,
+				983A27553131C3A98DA09EE4 /* NVTSnapMediaShareExtension.entitlements */,
+			);
+			path = NVTSnapMediaShareExtension;
+			sourceTree = "<group>";
+		};
+		4B0059FDF6A0FCE587042F54 /* NVTSnapMediaTests */ = {
+			isa = PBXGroup;
+			children = (
+				1534DCE4FC04937B840B6EC1 /* UnifiedMediaDetectorAndExtractorsTests.swift */,
+			);
+			path = NVTSnapMediaTests;
+			sourceTree = "<group>";
+		};
+		C123C736DED18642BE06E5C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F343A6C10D6E6CEFBB9E35F /* NVTSnapMedia.app */,
+				0E821D8981A4AED92F511E34 /* NVTSnapMediaShareExtension.appex */,
+				8C7994FE44ED31B885966181 /* NVTSnapMediaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		73690069B692B7E56422F899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				266FFC16377277DCCD9DF180 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3CC01287894AC9C89C38C78 /* NVTSnapMedia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6C746666D2EF092E9D78472 /* Build configuration list for PBXNativeTarget "NVTSnapMedia" */;
+			buildPhases = (
+				B22AB5D313F123C436E8609B /* Sources */,
+				2E30240D3D4863272B33089E /* Frameworks */,
+				E96892BC3DF15B2A953417AF /* Resources */,
+				72E38B67DC3BBA121716C380 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				789A81BEAA631BF36686829D /* PBXTargetDependency */,
+			);
+			name = NVTSnapMedia;
+			productName = NVTSnapMedia;
+			productReference = 2F343A6C10D6E6CEFBB9E35F /* NVTSnapMedia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC431660092F0A1780E0C7E0 /* NVTSnapMediaShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC01E50FACFED80E10D1174 /* Build configuration list for PBXNativeTarget "NVTSnapMediaShareExtension" */;
+			buildPhases = (
+				32911F34E16BBD2EE0137C11 /* Sources */,
+				B1770EACAF858E58D2A5823A /* Frameworks */,
+				994502F548B044A6E5F817B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NVTSnapMediaShareExtension;
+			productName = NVTSnapMediaShareExtension;
+			productReference = 0E821D8981A4AED92F511E34 /* NVTSnapMediaShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		836C3AC2A09778BB140EF393 /* NVTSnapMediaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 781091620DC5B3A169F1D449 /* Build configuration list for PBXNativeTarget "NVTSnapMediaTests" */;
+			buildPhases = (
+				99E2360BC4F40F96BF3F6EF2 /* Sources */,
+				C0BDD7A3CB0F54C775FAEB13 /* Frameworks */,
+				0B8C63BDFA3906B10412B39D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C65966BA6B2B67AA6C041965 /* PBXTargetDependency */,
+			);
+			name = NVTSnapMediaTests;
+			productName = NVTSnapMediaTests;
+			productReference = 8C7994FE44ED31B885966181 /* NVTSnapMediaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6C118764417BDDBEC4AB74F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E3CC01287894AC9C89C38C78 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					DC431660092F0A1780E0C7E0 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					836C3AC2A09778BB140EF393 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E3CC01287894AC9C89C38C78;
+					};
+				};
+			};
+			buildConfigurationList = 62EC3642A512AAD96CCC1524 /* Build configuration list for PBXProject "NVTSnapMedia" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = vi;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				vi,
+				Base,
+			);
+			mainGroup = 4008B3967F37A5CB286A87C3;
+			productRefGroup = C123C736DED18642BE06E5C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3CC01287894AC9C89C38C78 /* NVTSnapMedia */,
+				DC431660092F0A1780E0C7E0 /* NVTSnapMediaShareExtension */,
+				836C3AC2A09778BB140EF393 /* NVTSnapMediaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E96892BC3DF15B2A953417AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F1E7196FA6D82E74431A08E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994502F548B044A6E5F817B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B8C63BDFA3906B10412B39D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B22AB5D313F123C436E8609B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1FC4478FB4D7A522EE0C519 /* AppContainer.swift in Sources */,
+				B530252E0CB09AA066138080 /* NVTSnapMediaApp.swift in Sources */,
+				AD3759BD50CEB258077195D7 /* RootTabView.swift in Sources */,
+				C74A2F2B83DF913179941202 /* AudioTrackExtractor.swift in Sources */,
+				E698715CE67465324772B2D1 /* DashTrackMuxer.swift in Sources */,
+				591ECB09E4ED4D028CFC2498 /* MediaDownloadManager.swift in Sources */,
+				B009A6E77FDCC867CBC57170 /* AppPreferences.swift in Sources */,
+				8490F59B4A1DB970456AA4CE /* DownloadDatabase.swift in Sources */,
+				7968B3DFAA3D4D049F628554 /* FacebookExtractorService.swift in Sources */,
+				3D08747AA180E7DD16EF32D6 /* TikTokExtractorService.swift in Sources */,
+				D4D7E35BC9551A486657617E /* UnifiedMediaExtractor.swift in Sources */,
+				B02782AF1128D2B3FAEB8D54 /* YouTubeExtractorService.swift in Sources */,
+				870834BEBF6729344183C4A1 /* DownloadRecord.swift in Sources */,
+				D0B7883EC6C407247A6E36D6 /* UnifiedMedia.swift in Sources */,
+				C18B9033DCA86A4B4367D789 /* FacebookUrlParser.swift in Sources */,
+				D6BF9FD9BDB1E3C1AB447366 /* MediaUrlDetector.swift in Sources */,
+				46F1BC47D5DBCECFEEB40493 /* RegexUtils.swift in Sources */,
+				DB136EA49DD6A5A887CA6E24 /* TikTokUrlParser.swift in Sources */,
+				8E398F691F661B3543143C2E /* YouTubeUrlParser.swift in Sources */,
+				4DC9321693AAE12BB888B3EE /* RemoteMediaImage.swift in Sources */,
+				6A6B3A461BB77EDDA8884E70 /* SnapMediaComponents.swift in Sources */,
+				FAD9A3AFAE4C6ED758D0FBF5 /* AppStrings.swift in Sources */,
+				A7D111E4487DC10CA0D458EE /* MainViewModel.swift in Sources */,
+				522149EE41A86355A54D0A81 /* DownloadsScreen.swift in Sources */,
+				928C4E2C2E2FCC4AE5852134 /* HomeScreen.swift in Sources */,
+				0E756E533FB7D151F2AB4775 /* MediaViewerView.swift in Sources */,
+				B621EF5CA9895EBE22CD3153 /* SettingsScreen.swift in Sources */,
+				D2251DA45415ACB48EED1891 /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32911F34E16BBD2EE0137C11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC6953CAE66330CDA6EFC1E /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99E2360BC4F40F96BF3F6EF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6F8B545A50110864781C88 /* UnifiedMediaDetectorAndExtractorsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		789A81BEAA631BF36686829D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC431660092F0A1780E0C7E0 /* NVTSnapMediaShareExtension */;
+			targetProxy = E05E48FDD63002E4852104F4 /* PBXContainerItemProxy */;
+		};
+		C65966BA6B2B67AA6C041965 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3CC01287894AC9C89C38C78 /* NVTSnapMedia */;
+			targetProxy = 253F92EE134CF27BB079F641 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A9EE527C526A2C72FCAAD3D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F66EF71E833BA96E40294E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0A18B1C294CB84EC470CC1C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NVTSnapMedia/Resources/NVTSnapMedia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NVTSnapMedia/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lsqlite3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvtsnapmedia.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0B5F39D96CB0E64D436C452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NVTSnapMedia/Resources/NVTSnapMedia.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = NVTSnapMedia/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-lsqlite3",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvtsnapmedia.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8744B2C6FCA73089F33027BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NVTSnapMediaShareExtension/NVTSnapMediaShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = NVTSnapMediaShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvtsnapmedia.app.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E15B156A15ABFEBDB12E5FD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = NVTSnapMediaShareExtension/NVTSnapMediaShareExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = NVTSnapMediaShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvtsnapmedia.app.ShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7186FD0C6B25348F93718B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvtsnapmedia.app.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVTSnapMedia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NVTSnapMedia";
+			};
+			name = Debug;
+		};
+		F7EFC7DFE7C0C5DB52212376 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nvtsnapmedia.app.Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NVTSnapMedia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NVTSnapMedia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62EC3642A512AAD96CCC1524 /* Build configuration list for PBXProject "NVTSnapMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9EE527C526A2C72FCAAD3D9 /* Debug */,
+				F66EF71E833BA96E40294E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6C746666D2EF092E9D78472 /* Build configuration list for PBXNativeTarget "NVTSnapMedia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A18B1C294CB84EC470CC1C9 /* Debug */,
+				F0B5F39D96CB0E64D436C452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC01E50FACFED80E10D1174 /* Build configuration list for PBXNativeTarget "NVTSnapMediaShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8744B2C6FCA73089F33027BC /* Debug */,
+				E15B156A15ABFEBDB12E5FD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		781091620DC5B3A169F1D449 /* Build configuration list for PBXNativeTarget "NVTSnapMediaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7186FD0C6B25348F93718B7B /* Debug */,
+				F7EFC7DFE7C0C5DB52212376 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6C118764417BDDBEC4AB74F /* Project object */;
+}

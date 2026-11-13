@@ -1,0 +1,67 @@
+name: NVTSnapMedia
+options:
+  bundleIdPrefix: com.nvtsnapmedia
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.4"
+  generateEmptyDirectories: false
+
+settings:
+  base:
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+    IPHONEOS_DEPLOYMENT_TARGET: "16.0"
+    TARGETED_DEVICE_FAMILY: "1,2"
+
+targets:
+  NVTSnapMedia:
+    type: application
+    platform: iOS
+    sources:
+      - path: NVTSnapMedia
+        excludes:
+          - "Resources/Info.plist"
+          - "Resources/NVTSnapMedia.entitlements"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nvtsnapmedia.app
+        INFOPLIST_FILE: NVTSnapMedia/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: NVTSnapMedia/Resources/NVTSnapMedia.entitlements
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        ENABLE_PREVIEWS: YES
+        OTHER_LDFLAGS:
+          - "$(inherited)"
+          - "-lsqlite3"
+    dependencies:
+      - target: NVTSnapMediaShareExtension
+        embed: true
+
+  NVTSnapMediaShareExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: NVTSnapMediaShareExtension
+        excludes:
+          - "Info.plist"
+          - "NVTSnapMediaShareExtension.entitlements"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nvtsnapmedia.app.ShareExtension
+        INFOPLIST_FILE: NVTSnapMediaShareExtension/Info.plist
+        CODE_SIGN_ENTITLEMENTS: NVTSnapMediaShareExtension/NVTSnapMediaShareExtension.entitlements
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+
+  NVTSnapMediaTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: NVTSnapMediaTests
+    dependencies:
+      - target: NVTSnapMedia
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.nvtsnapmedia.app.Tests
+        GENERATE_INFOPLIST_FILE: YES
